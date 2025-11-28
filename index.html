@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ice | Systems, Stories, Structure</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ice – Systems & Layers</title>
+<link rel="stylesheet" href="styles.css" />
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 60px;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  nav a {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  nav a:hover::after {
+    content: attr(data-preview);
+    position: absolute;
+    top: 22px;
+    left: 0;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.85);
+    color: #ccc;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+  }
+
+  .email-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Hi, I’m Ice.</h1>
-    <p>I build systems. Some are real. Some are imagined. All are designed.</p>
-  </header>
+  <h1>Hi, I’m Ice.</h1>
+  <p>I build systems. Some are real. Some are imagined. All are designed.</p>
 
-  <nav class="main-links">
-    <a href="/work">Work Systems</a>
-    <a href="/lab">Lab & Experiments</a>
-    <a href="/life">Life & Layers</a>
-    <a href="/about">About Me</a>
+  <nav>
+    <a href="/work/" data-preview="Strategy • Ops • Real Systems">Work Systems</a>
+    <a href="/lab/" data-preview="Design • Experiments • Future Things">Lab & Experiments</a>
+    <a href="/life/" data-preview="Process • Growth • Layers">Life & Layers</a>
+    <a href="/about/" data-preview="Context • Intent • Why I Build">About Me</a>
   </nav>
 
-  <footer>
-    <p>📧 hello@jxst.me</p>
-  </footer>
+  <a class="email-link" href="mailto:hello@jxst.me">📧 hello@jxst.me</a>
 
 </body>
 </html>
