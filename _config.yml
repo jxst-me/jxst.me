@@ -4,12 +4,14 @@ url: "https://jxst.me"
 
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
 
-permalink: /blog/:title/
+# Let Jekyll show future-dated posts
+future: true
 
-# Navigation
+# Make sure posts output correctly
 collections:
   posts:
     output: true
+
+# Permalink structure for nice blog URLs
+permalink: /blog/:title/
