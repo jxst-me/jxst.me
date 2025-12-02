@@ -1,0 +1,15 @@
+title: "jxst.me"
+description: "Systems. Layers. Experiments."
+url: "https://jxst.me"
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+permalink: /blog/:title/
+
+# Navigation
+collections:
+  posts:
+    output: true
