@@ -4,11 +4,11 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
-  <p class="date">{{ page.date | date: "%b %d, %Y" }}</p>
+  <span class="date">{{ page.date | date: "%b %d, %Y" }}</span>
 
   <div class="content">
     {{ content }}
   </div>
 
-  <p><a href="/blog" class="back-link">← Back to Blog</a></p>
+  <a href="/blog" class="back-link">← Back to Blog</a>
 </article>
