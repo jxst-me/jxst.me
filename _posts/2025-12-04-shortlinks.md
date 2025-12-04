@@ -1,3 +1,8 @@
+---
+layout: post
+title: "How I Turned a Short Domain Into a Custom Shortlink System Using Cloudflare Workers"
+date: 2025-12-04
+---
 # **How I Turned a Short Domain Into a Custom Shortlink System Using Cloudflare Workers**
 
 Short domains aren’t just cute—they’re powerful.  
